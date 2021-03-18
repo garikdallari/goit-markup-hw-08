@@ -1,0 +1,45 @@
+.footer {
+    background-color: $bg-color;
+}
+.footer-cnt {
+    display: inline-flex;
+    align-items: baseline;
+}
+
+.footer-wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-address__item {
+    @include font-source(14px, $white-primary, normal, 1.7, null);
+    font-style: normal;
+
+
+    &:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+    &:first-child {
+        margin-top: 20px;
+    }
+}
+.footer-address__link {
+    @include font-source(14px, $white-secondary-op, normal, 1.7, null);
+
+    transition: color 250ms $cubic;
+
+    &:hover,
+    &:focus {
+        color: $blue-accent;
+    }
+}
+.footer-follow {
+    margin-left: 70px;
+
+    &__title {
+        @include font-source(14px, $white-primary, 700, 1.14, 0.03em);
+
+        text-transform: uppercase;
+    }
+}

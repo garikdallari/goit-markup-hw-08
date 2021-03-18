@@ -1,0 +1,62 @@
+@mixin title-style {
+
+    margin-bottom: 50px;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.2;
+      text-align: center;
+      color: $black-secondary;
+  }
+
+
+
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin cover-background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+@mixin font-source(
+    $size: false,
+    $colour: false,
+    $weight: false,
+    $lh: false,
+    $ls: false
+) {
+    @if $size {
+        font-size: $size;
+    }
+
+    @if $colour {
+        color: $colour;
+    }
+
+    @if $weight {
+        font-weight: $weight;
+    }
+
+    @if $lh {
+        line-height: $lh;
+    }
+
+    @if $ls {
+        letter-spacing: $ls;
+    }
+}

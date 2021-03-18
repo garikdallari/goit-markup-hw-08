@@ -1,0 +1,12 @@
+.logo {
+    font-family: Raleway, sans-serif;
+
+    @include font-source(26px, $blue-accent, 700, 1.2, null);
+}
+.header__logo {
+    color: $black-primary;
+}
+
+.footer__logo {
+    color: $white-primary;
+}
