@@ -1,0 +1,32 @@
+.partners {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.partners__title {
+   @include title-style;
+}
+
+.partners-site {
+    display: inline-flex;
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.partners-site__link {
+    @include flex-center();
+    @include size (170px, 90px);
+    border: 1px solid #afb1b9;
+    fill: #afb1b8;
+    transition: fill 250ms $cubic, border 250ms $cubic, border-radius 250ms $cubic;
+
+    &:hover,
+    &:focus {
+        border: 1px solid $blue-accent;
+        border-radius: 4px;
+        fill: $blue-accent;
+    }
+}
+
