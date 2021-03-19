@@ -5,19 +5,21 @@
 
 .partners__title {
    @include title-style;
+   margin-bottom: 30px;
 }
-
 .partners-site {
     display: inline-flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  
 
-    &__item:not(:last-child) {
-        margin-right: 30px;
-    }
 }
-
 .partners-site__link {
     @include flex-center();
-    @include size (170px, 90px);
+    @include size (210px, 90px);
+    margin: 15px;
+    
+   
     border: 1px solid #afb1b9;
     fill: #afb1b8;
     transition: fill 250ms $cubic, border 250ms $cubic, border-radius 250ms $cubic;
@@ -29,4 +31,3 @@
         fill: $blue-accent;
     }
 }
-

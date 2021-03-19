@@ -3,10 +3,9 @@
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid red;
 
-    @media (min-width: 468px) {
-      width: 468px;
+    @media (min-width: 480px) {
+      width: 480px;
     }
 
     @media (min-width: 768px) {

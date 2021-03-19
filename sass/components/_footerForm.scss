@@ -1,8 +1,4 @@
-.subscribe {
-    margin-left: 93px;
-}
 .footerForm__email {
-    margin-top: 20px;
     min-width: 358px;
     min-height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -19,16 +15,13 @@
             null,
             1.25,
             0.03em
-        );
+        )
     }
 }
-
 .footerForm__button {
     display: inline-flex;
     align-items: center;
-
-    transform: translate(370px, -50px);
-
+    margin-top: 20px;
     padding: 10px 32px;
     min-width: 200px;
     border-radius: 4px;

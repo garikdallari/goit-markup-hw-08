@@ -1,16 +1,13 @@
 .footer-socials {
-    margin-top: 20px;
     display: inline-flex;
 
     &__item:not(:last-child) {
         margin-right: 10px;
     }
 }
-
 .footer-socials__icon {
     fill: $white-primary;
 }
-
 .footer-socials__link {
     @include flex-center();
     @include size(44px);
@@ -26,3 +23,5 @@
         outline: none;
     }
 }
+
+
