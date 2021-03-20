@@ -8,18 +8,24 @@
    margin-bottom: 30px;
 }
 .partners-site {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+    
+ .partners-site__item{
+     margin-top: 30px;
+     margin-left: 30px;
+     width: calc(100% / 2 - 30px);
+
+ }   
   
 
-}
+
 .partners-site__link {
     @include flex-center();
     @include size (210px, 90px);
-    margin: 15px;
-    
-   
     border: 1px solid #afb1b9;
     fill: #afb1b8;
     transition: fill 250ms $cubic, border 250ms $cubic, border-radius 250ms $cubic;

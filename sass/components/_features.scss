@@ -7,7 +7,7 @@
     @include flex-center();
     margin-bottom: 30px;
 
-    @include size(450px, 120px);
+    @include size(100%, 120px);
     background: $btn-bg;
     border-radius: 4px;
     transition: filter 250ms $cubic;
