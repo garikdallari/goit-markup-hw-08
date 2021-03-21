@@ -3,7 +3,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    @include size(528px, 581px);
+    @include size(450px, 609px);
+
+    @media (min-width:1200px) {
+        @include size(528px, 581px)
+    }
     padding: 40px;
 
     background-color: $white-primary;
