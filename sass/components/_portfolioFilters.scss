@@ -1,6 +1,10 @@
 .heroPortfolio {
     padding-top: 60px;
     padding-bottom: 60px;
+    @media (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 .hero-filter {
     display: flex;
@@ -13,7 +17,10 @@
         margin-bottom: 30px;
    
     }
-    
+    @media (min-width:1200px) {
+        margin-bottom: 50px;
+    }
+ 
     &__item:not(:last-child) {
         margin-right: 8px;
     }

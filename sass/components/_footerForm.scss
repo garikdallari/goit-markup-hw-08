@@ -8,7 +8,12 @@
     background-color: $bg-color;
 
     @media (min-width:768px) {
-        min-width: 450px;    }
+        min-width: 450px;
+    }
+    @media (min-width:1200px) {
+        min-width: 368px;
+    }
+
 
     &::placeholder {
         padding-left: 16px;
@@ -25,6 +30,10 @@
     display: inline-flex;
     align-items: center;
     margin-top: 20px;
+    @media (min-width:1200px) {
+        margin-top: 0;
+    }
+
     padding: 10px 32px;
     min-width: 200px;
     border-radius: 4px;
@@ -35,6 +44,9 @@
     background-color: $blue-accent;
 
     cursor: pointer;
+    @media (min-width:1200px) {
+        transform: translate(385px, -50px);
+    }
 }
 
 .footerForm__icon {

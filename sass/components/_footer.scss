@@ -3,12 +3,26 @@
     padding-bottom: 60px;
     
     text-align: center;
+    @media (min-width:1200px) {
+        text-align: start;
+    }
+    
     background-color: $bg-color;
 }
+
+
 .footer-container {
     @media (min-width:768px) {
         display: flex;
     }
+    
+}
+.footer-content {
+    @media (min-width:1200px) {
+        display: flex;
+      
+    }
+    
 }
 
 
@@ -16,6 +30,9 @@
 .footer-address {
     margin-top: 20px;
     margin-bottom: 60px;
+    @media (min-width:1200px) {
+        margin-bottom: 0px;
+    }
 }
 .footer-address__item {
 
@@ -24,6 +41,9 @@
 
     &:not(:last-child) {
         margin-bottom: 8px;
+        @media (min-width:1200px) {
+            margin-bottom: 9px;
+        }
     }
 }
 .footer-address__link {
@@ -39,11 +59,19 @@
 .footer-wrapper {
    @media (min-width:768px) {
        margin-left: 76px;
+       @media (min-width:1200px) {
+           margin-left: 0;
+       }
+
    }
 }
 .footer-follow {
     @media (min-width:768px) {
         margin-left: 165px;
+    }
+    @media (min-width:1200px) {
+        margin-left: 70px;
+        margin-right: 93px;
     }
 }
 

@@ -1,7 +1,13 @@
 .features {
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
+
 .features-list{
 @media (min-width:768px) {
         display: flex;
@@ -16,6 +22,9 @@
         margin-top: 30px;
         margin-left: 30px;
         flex-basis: calc(100% / 2 - 30px);
+    }
+    @media (min-width:1200px) {
+        flex-basis: calc(100% / 4 - 30px);
     }
 }
 .features-wrapper {
@@ -33,6 +42,9 @@
 
     @media (min-width:768px) {
         @include size(354px, 120px);
+    }
+    @media (min-width:1200px) {
+        @include size(270px, 120px);
     }
 }
 .features-list__item:not(:last-child) {
@@ -55,6 +67,9 @@
 .features-list__text {
     @include font-source(14px, $grey-cnt, null, 1.7, null);
     width: 354px;
+    @media (min-width:1200px) {
+        width: 100%;
+    }
     
 }
 

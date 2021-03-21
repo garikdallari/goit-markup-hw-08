@@ -27,17 +27,32 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../../images/bgtablet-@2x.jpg);
   }
+  @media (min-width:1200px) { 
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+     url(../../images/bg.jpg);
+  }
+  @media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../../images/bgmob-@2x.jpg);
+  }
 }
 
 
 .hero-wrapper {
-    max-width: 360px;
-    margin: 0 auto;
+    // max-width: 360px;
+    margin: auto;
 }
 .hero__title {
     margin-bottom: 30px;
 
     @include font-source(26px, $white-primary, 900, 1.6, 0.06em);
+    @media (min-width:1200px) {
+      font-size: 44px;
+      
+      
+    }
     
     text-transform: uppercase;
 }

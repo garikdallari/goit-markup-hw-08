@@ -1,11 +1,20 @@
 .team {
     padding-top: 60px;
     padding-bottom: 60px;
+    @media (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
     background-color: $btn-bg;
+
 
     &__title {
         @include title-style;
         margin-bottom: 30px;
+        @media (min-width:1200px) {
+            margin-bottom: 50px;
+        }
+
     }
 }
 
@@ -28,6 +37,12 @@
             margin-top: 30px;
             margin-left: 30px;
             flex-basis: calc(100% / 2 - 30px);
+        }
+        @media (min-width:1200px) {
+            max-width: 270px;
+            margin-top: 30px;
+            margin-left: 30px;
+            flex-basis: calc(100% / 4 - 30px);
         }
     }
     &__item:not(:last-child) {

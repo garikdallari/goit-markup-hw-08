@@ -1,11 +1,20 @@
 .partners {
     padding-top: 60px;
     padding-bottom: 60px;
+    @media (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+
 }
 
 .partners__title {
    @include title-style;
    margin-bottom: 30px;
+   @media (min-width:1200px) {
+    margin-bottom: 50px;
+}
 }
 .partners-site {
     display: flex;
@@ -22,6 +31,9 @@
      @media (min-width:768px) {
         width: calc(100% / 3 - 30px);
      }
+     @media (min-width:1200px) {
+        width: calc(100% / 6 - 30px);
+     }
 
  }   
   
@@ -29,7 +41,6 @@
 
 .partners-site__link {
     @include flex-center();
-
    max-width: 210px;
    height: 90px;
     border: 1px solid #afb1b9;
@@ -46,4 +57,8 @@
     @media (min-width:768px) {
         max-width: 226px;
     }
+    @media (min-width:1200px) {
+        max-width: 170px;
+    }
+
 }
