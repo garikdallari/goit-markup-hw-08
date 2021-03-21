@@ -1,6 +1,6 @@
 .partners {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .partners__title {
@@ -18,6 +18,10 @@
      margin-top: 30px;
      margin-left: 30px;
      width: calc(100% / 2 - 30px);
+     
+     @media (min-width:768px) {
+        width: calc(100% / 3 - 30px);
+     }
 
  }   
   
@@ -25,7 +29,9 @@
 
 .partners-site__link {
     @include flex-center();
-    @include size (210px, 90px);
+
+   max-width: 210px;
+   height: 90px;
     border: 1px solid #afb1b9;
     fill: #afb1b8;
     transition: fill 250ms $cubic, border 250ms $cubic, border-radius 250ms $cubic;
@@ -35,5 +41,9 @@
         border: 1px solid $blue-accent;
         border-radius: 4px;
         fill: $blue-accent;
+    }
+
+    @media (min-width:768px) {
+        max-width: 226px;
     }
 }
