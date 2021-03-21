@@ -1,9 +1,17 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
+    
     text-align: center;
     background-color: $bg-color;
 }
+.footer-container {
+    @media (min-width:768px) {
+        display: flex;
+    }
+}
+
+
 
 .footer-address {
     margin-top: 20px;
@@ -28,6 +36,16 @@
         color: $blue-accent;
     }
 }
+.footer-wrapper {
+   @media (min-width:768px) {
+       margin-left: 76px;
+   }
+}
+.footer-follow {
+    @media (min-width:768px) {
+        margin-left: 165px;
+    }
+}
 
 .footer-follow__title {
     @include font-source(14px, $white-primary, 700, 1, 0.03em);
@@ -35,4 +53,8 @@
         text-transform: uppercase;
         margin-bottom: 20px;
         margin-top: 60px;
+
+        @media (min-width:768px) {
+            margin-top: 0;
+        }
 }

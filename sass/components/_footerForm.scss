@@ -7,6 +7,9 @@
     color: $white-primary;
     background-color: $bg-color;
 
+    @media (min-width:768px) {
+        min-width: 450px;    }
+
     &::placeholder {
         padding-left: 16px;
         @include font-source(
