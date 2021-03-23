@@ -66,7 +66,7 @@
   &--current::after {
     position: absolute;
     content: "";
-    transform: translateY(27px);
+    transform: translateY(32px);
     display: block;
     @include size (100%, 4px);
     border-radius: 2px;
@@ -76,12 +76,20 @@
   
   .nav-contacts {
     display: block;
+   
     @media (min-width:1200px) {
       display: flex;
       align-items: center;
       
     }
   }
+  .nav-contacts__item--margin {
+    @media (max-width:1199px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  
 .nav-contacts__link {
   @include font-source (14px, $grey-cnt, 500, 1.2, null);
   transition: color 250ms $cubic;
