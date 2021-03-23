@@ -18,30 +18,38 @@
         <div class="container">
         <nav class="header-nav">
             <div class="mobile-container">
-                <a href="./index.html" class="logo">Web<span class="logo header__logo">Studio</span></a>
-                <svg class="burger-open" width="24px" height="16px">
+            <a href="./index.html" class="logo">Web<span class="logo header__logo">Studio</span></a>
+            <button 
+            class="menu-toggleOpen js-open-menu" 
+            aria-expanded="false"
+            aria-controls="mobile-menu">
+                <svg width="24px" height="16px">
                     <use href="./images/symbol-defs.svg#icon-burger-open"></use>
                 </svg>
-            </div>
+            </button>
+        </div>
             <div class="header__container">
             <ul class="nav-list">
-                <li class="nav-list__item"><a href="./index.html" class="nav-list__link">Студия</a></li>
-                <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link nav-list__link--current">Портфолио</a></li>
+                <li class="nav-list__item"><a href="./index.html" class="nav-list__link nav-list__link--current">Студия</a></li>
+                <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link">Портфолио</a></li>
                 <li class="nav-list__item"><a href="" class="nav-list__link">Контакты</a></li>
             </ul>
+           
         <ul class="nav-contacts">
             <li class="nav-contacts__item"><a href="mailto:info@devstudio.com" class="nav-contacts__link">
-                <svg class="nav-contacts__icon" width="14px" height="10px">
+                <svg class="nav-contacts__icon nav-contacts__iconEnv" width="14px" height="10px">
                     <use href="./images/symbol-defs.svg#icon-envelope"></use>
                 </svg>info@devstudio.com</a></li>
             <li class="nav-contacts__item"><a href="tel:+380961111111" class="nav-contacts__link">
-                <svg class="nav-contacts__icon" width="10px" height="14px">
+                <svg class="nav-contacts__icon nav-contacts__iconPhone" width="10px" height="14px">
                     <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                 </svg>+38 096 111 11 11</a></li>
         </ul>
     </div>
+    
         </nav>
         </div>
+    
     </header>
     <!-- hero -->
     <main class="heroPortfolio">
@@ -258,5 +266,38 @@
 </div>
 
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+         <svg width="19px" height="19px">
+             <use href="./images/symbol-defs.svg#burger-close"></use>
+         </svg>
+        </button>
+         <ul class="mob-nav">
+             <li class="mob-nav__item"><a href="./index.html" class="mob-nav__link">Студия</a></li>
+             <li class="mob-nav__item"><a href="./portfolio.html" class="mob-nav__link">Портфолио</a></li>
+             <li class="mob-nav__item"><a href="#" class="mob-nav__link">Контакты</a></li>
+         </ul>
+     
+         <ul class="mob-contacts">
+             <li class="mob-contacts__item"><a href="tel:+380961111111" class="mob-contacts__link">+38 096 1111111</a></li>
+             <li class="mob-contacts__item"><a href="mailto:info@devstudio.com" class="mob-contacts__link">info@devstudio.com</a></li>
+         </ul>
+     
+         <ul class="mob-socials">
+             <li class="mob-socials__item"><a href="#" class="mob-socials__link">Instagram</a></li>
+             <li class="mob-socials__item"><a href="#" class="mob-socials__link">Twitter</a></li>
+             <li class="mob-socials__item"><a href="#" class="mob-socials__link">Facebook</a></li>
+             <li class="mob-socials__item"><a href="#" class="mob-socials__link">LinkedIn</a></li>
+         </ul>
+     
+     </div>
+     <script
+           defer
+           src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+           integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+           crossorigin="anonymous">
+         </script>
+         <script defer src="./js/mobile-menu.js"></script>
+     <script src="./js/modal.js"></script>
 </body>
 </html>

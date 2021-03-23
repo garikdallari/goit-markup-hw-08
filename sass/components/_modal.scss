@@ -3,7 +3,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    @include size(450px, 609px);
+    @include size(450px, auto);
 
     @media (min-width:1200px) {
         @include size(528px, 581px)
@@ -116,17 +116,22 @@ form {
 
 .modal-checkbox {
     @include flex-center();
+    @include font-source (12px, $grey-cnt, 400, 1.7, 0.03em);
+    
+    
+    
 
     margin-bottom: 30px;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: $grey-cnt;
+  
 
     &__link {
         color: $blue-accent;
         text-decoration: underline;
         margin-left: 3px;
+    }
+
+    @media (min-width:1200px) {
+        font-size: 14px;
     }
 }
 
@@ -145,7 +150,10 @@ form {
 }
 .modal-checkbox__icon {
     position: absolute;
-    transform: translateX(-204px);
+    transform: translateX(-176px);
+    @media (min-width:1200px) {
+        transform: translateX(-204px);
+    }
     display: none;
 }
 

@@ -1,0 +1,117 @@
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 480px;
+    width: 100vw;
+    height: 100vh;
+   padding: 48px 40px;
+    background-color: #fff;
+    transform: translateX(100%);
+    transition: transform 250ms $cubic;
+
+    @media (min-width:767px) {
+        display: none;
+    }
+  }
+
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
+  .menu-toggleOpen{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    
+    &:hover,
+    &:focus {
+        fill: $blue-accent;
+    }
+
+    @media (min-width: 767px) {
+        display: none;
+      }
+    }
+  
+  .menu-toggle {
+      position: absolute;
+      top: 21px;
+      right: 30px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      
+      &:hover,
+      &:focus {
+          fill: $blue-accent;
+      }
+
+      @media (min-width: 767px) {
+          display: none;
+        }
+      }
+
+  
+      .mob-nav__item:not(:last-child) {
+margin-bottom: 32px;
+      }
+
+    
+      .mob-nav__link {
+          @include font-source (40px, $black-primary, 500, 1.17, 0.02em);
+
+          transition: color 250ms $cubic;
+
+          &:hover,
+          &:focus {
+              color: $blue-accent;
+          }
+      }
+
+.mob-contacts {
+    margin-top: 250px;
+    margin-bottom: 64px;
+}
+      .mob-contacts__item:first-child {
+          margin-bottom: 32px;
+      }
+
+      .mob-contacts__link {
+          @include font-source (24px, $grey-cnt, 500, 1.17, 0.02em);
+          transition: all 250ms $cubic;
+
+          &:hover,
+          &:focus {
+              font-size: 34px;
+              color: $blue-accent;
+          }
+      }
+
+      .mob-socials {
+       display: flex;
+
+       
+    //    position: absolute;
+    //    bottom: 48px;
+      }
+     
+
+      .mob-socials__item {
+          margin-right: 20px;
+      }
+      .mob-socials__link {
+          position: relative;
+          @include font-source (500, $blue-accent, 500, 1.22, 0.02em);
+      }
+
+  .mob-socials__item:not(:last-child)::after {
+   
+        content: "";
+        position: absolute;
+        margin-left: 10px;
+        height: 22px;
+        width: 1px;
+        display: inline-block;
+        background-color: rgba(33, 33, 33, 0.2);
+  }
+        
