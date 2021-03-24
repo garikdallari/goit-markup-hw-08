@@ -67,6 +67,9 @@
     position: absolute;
     content: "";
     transform: translateY(32px);
+    @media (min-width:1200px) {
+      transform: translateY(27px);
+    }
     display: block;
     @include size (100%, 4px);
     border-radius: 2px;

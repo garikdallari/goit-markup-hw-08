@@ -324,6 +324,13 @@ form {
   background-color: #2196f3;
 }
 
+@media (min-width: 1200px) {
+  .nav-list__link--current::after {
+    -webkit-transform: translateY(27px);
+            transform: translateY(27px);
+  }
+}
+
 .nav-contacts {
   display: block;
 }
